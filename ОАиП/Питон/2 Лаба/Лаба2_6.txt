@@ -1,0 +1,9 @@
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+c = float(input("Введите третье число: "))
+max_ch = max(a, b, c)
+min_ch = min(a, b, c)
+sr = (a + b + c) / 3
+print(f"Максимум: {max_ch:.2f}")
+print(f"Минимум: {min_ch:.2f}")
+print(f"Среднее арифметическое: {sr:.2f}")

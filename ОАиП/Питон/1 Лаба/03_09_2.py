@@ -1,0 +1,15 @@
+n = int(input("Введите четырехзначное целое число: "))
+
+a = n // 1000
+b = (n // 100) % 10
+c = (n // 10) % 10
+d = n % 10
+
+sum_dig = a + b + c + d
+prod = a * b * c * d
+sr = sum_dig / 4.0
+
+print(f"Цифры: {a}, {b}, {c}, {d}")
+print(f"Сумма: {sum_dig}")
+print(f"Произведение: {prod}")
+print(f"Среднее: {sr:.2f}")

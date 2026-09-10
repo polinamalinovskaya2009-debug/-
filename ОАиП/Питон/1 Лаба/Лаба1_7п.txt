@@ -1,0 +1,12 @@
+import math
+a = float(input("Введите катет a: "))
+b = float(input("Введите катет b: "))
+c = math.sqrt(a**2 + b**2)
+S = a * b / 2
+P = a + b + c
+ugnap = math.atan(a / b)
+uggrad = ugnap * 180 / math.pi
+print(f"Гипотенуза: {c:.2f}")
+print(f"Площадь: {S:.2f}")
+print(f"Периметр: {P:.2f}")
+print(f"Угол при вершине A : {uggrad:.2f}")

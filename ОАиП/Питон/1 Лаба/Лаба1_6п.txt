@@ -1,0 +1,6 @@
+kmh = float(input("Введите скорость в км/ч: "))
+ms = kmh * 1000 / 3600
+mph = kmh / 1.609
+print(f"км/ч: {kmh:.2f}")
+print(f"м/с: {ms:.2f}")
+print(f"миль/ч: {mph:.2f}")

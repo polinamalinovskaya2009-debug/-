@@ -1,0 +1,14 @@
+a = float(input("Сторона а: "))
+b = float(input("Сторона b: "))
+c = float(input("Сторона c: "))
+if a + b > c and a + c > b and b + c > a:
+    p = a + b + c
+    print('Треугольник существует')
+    if a == b == c:
+        print(' - равносторонний')
+    elif a == b or a == c or b == c:
+        print(' - равнобедренный')
+    else:
+        print(' - разносторонний')
+else:
+    print('Треугольник не существует')

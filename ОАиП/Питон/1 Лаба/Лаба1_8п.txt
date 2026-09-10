@@ -1,0 +1,6 @@
+import math
+vkl = float(input("Введите начальный вклад: "))
+stav = float(input("Введите годовую ставку: "))
+years = float(input("Введите количество лет: "))
+result = vkl * (1 + stav/100) ** years
+print(f"Итоговая сумма: {result:.2f} руб.")

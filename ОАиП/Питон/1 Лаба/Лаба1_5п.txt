@@ -1,0 +1,6 @@
+import math
+R = float(input("Введите радиус шара: "))
+V = 4/3 * math.pi * R**3
+S = 4 * math.pi * R**2
+print(f"Объем: {V:.2f}")
+print(f"Площадь поверхности: {S:.2f}")

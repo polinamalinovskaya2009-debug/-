@@ -1,0 +1,8 @@
+total = int(input("Введите количество минут: "))
+weeks = total // (7*24*60)
+rem = total % (7 * 24 * 60)
+days = rem // (24 * 60)
+rem = rem % (24 * 60)
+hours = rem // 60
+minutes = rem % 60
+print(f"{total} минут = {weeks} недель {days} дней {hours} часов {minutes} минут")

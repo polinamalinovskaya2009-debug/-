@@ -1,0 +1,22 @@
+a = float(input("Введите точку a: "))
+b = float(input("Введите точку b: "))
+op = int(input('Введите номер операции (1 — сложение, 2 — вычитание, 3 — умножение, 4 — деление): '))
+
+res = None  # Инициализируем переменную
+
+if op == 1:
+    res = a + b
+elif op == 2:
+    res = a - b
+elif op == 3:
+    res = a * b
+elif op == 4:
+    if b == 0:
+        print('Ошибка: деление на ноль')
+    else:
+        res = a / b
+else:
+    print('Ошибка: неверный номер операции')
+
+if res is not None:
+    print(f'Результат: {res:.2f}')

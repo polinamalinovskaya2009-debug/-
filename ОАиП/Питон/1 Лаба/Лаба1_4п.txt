@@ -1,0 +1,11 @@
+import math
+deg = float(input('Введите угол в градусах: '))
+rad = deg * math.pi / 180
+s = math.sin(rad)
+c = math.cos(rad)
+t = math.tan(rad)
+ct = 1 / t
+print(f"sin: {s: 4f}")
+print(f"cos: {c: 4f}")
+print(f"tan: {t: 4f}")
+print(f"ctg: {ct: 4f}")

@@ -1,0 +1,15 @@
+rub = float(input("Введите сумму в рублях: "))
+print("Выберите валюту: 1 - USD, 2 - EUR, 3 - GBP")
+ch = int(input())
+if ch == 1:
+    stav = 90
+elif ch == 2:
+    stav = 96
+elif ch == 3:
+    stav = 112
+else:
+    print("Неверный выбор")
+    stav = None
+if stav is not None:
+    res = rub / stav
+    print(f"Сумма: {res:.2f}")
