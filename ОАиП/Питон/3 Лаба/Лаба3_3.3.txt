@@ -1,0 +1,7 @@
+x = int(input())
+maxim = x
+while x != 0:
+    if x > maxim:
+        maxim = x
+    x = int(input())
+print(maxim)

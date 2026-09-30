@@ -1,0 +1,8 @@
+N = int(input())
+maxim = 0
+while N > 0:
+    dig = N % 10
+    if dig > maxim:
+        maxim = dig
+    N //= 10
+print(maxim)
