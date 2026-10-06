@@ -1,0 +1,13 @@
+N = int(input("Введите N: "))
+
+	orig = n
+	rev = 0
+
+while n > 0 :
+	rev = rev * 10 + n % 10
+	N = N // 10
+
+	if orig == rev :
+		print('Палиндром')
+	else 
+		writeln('Не палиндром')

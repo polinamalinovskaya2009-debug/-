@@ -1,0 +1,16 @@
+N = int(input("Введите N: "))
+
+temp = abs(N)
+minim = temp % 10
+maxim = temp % 10
+
+while temp > 0:
+    cif = temp % 10
+    if cif > maxim:
+        maxim = cif
+    if cif < minim:
+        minim = cif
+    temp //= 10
+
+print("Максимум:", maxim)
+print("Минимум:", minim)

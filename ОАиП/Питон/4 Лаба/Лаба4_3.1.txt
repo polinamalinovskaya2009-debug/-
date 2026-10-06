@@ -1,0 +1,12 @@
+N = int(input("Введите N: "))
+
+print("Простые числа:", end=" ")
+for chis in range(2, N + 1):
+    prost = True
+    for delit in range(2, int(chis ** 0.5) + 1):
+        if chis % delit == 0:
+            prost = False
+            break
+    if prost:
+        print(chis, end=" ")
+print()

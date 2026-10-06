@@ -1,0 +1,8 @@
+nums = list(map(int, input("Ввод: ").split()))
+nums = [x for x in nums if x != 0]
+
+mx = max(nums)
+mn = min(nums)
+print(f"Максимум: {mx}")
+print(f"Минимум: {mn}")
+print(f"Разность: {mx - mn}")

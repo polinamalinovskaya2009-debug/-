@@ -1,0 +1,21 @@
+nums = list(map(int, input("Ввод: ").split()))
+nums = [x for x in nums if x != 0]
+
+if not nums:
+    print("Последовательность пустая")
+else:
+    mx1 = nums[0]
+    mx2 = None
+
+    for x in nums:
+        if x > mx1:
+            mx2 = mx1
+            mx1 = x
+        elif x < mx1 and (mx2 is None or x > mx2):
+            mx2 = x
+
+    print(f"Первый максимум: {mx1}")
+    if mx2 is None:
+        print("Второго максимума нет")
+    else:
+        print(f"Второй максимум: {mx2}")

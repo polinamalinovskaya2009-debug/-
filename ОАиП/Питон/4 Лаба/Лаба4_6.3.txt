@@ -1,0 +1,9 @@
+n = int(input("Ввод: "))
+result = []
+for k in range(1, n + 1):
+    digits = str(k)
+    d = len(digits)
+    total = sum(int(c) ** d for c in digits)
+    if total == k:
+        result.append(k)
+print("Числа Армстронга:", " ".join(map(str, result)))

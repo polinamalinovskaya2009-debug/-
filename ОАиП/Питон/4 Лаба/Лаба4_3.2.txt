@@ -1,0 +1,17 @@
+N = int(input("Введите N: "))
+
+summ = 0
+delit = []
+
+for delit in range(1, N):
+    if N % delit == 0:
+        delit.append(delit)
+        summ += delit
+
+print("Делители:", *delit)
+print("Сумма:", summ)
+
+if summ == N and N > 1:
+    print("Вывод: совершенное")
+else:
+    print("Вывод: не совершенное")

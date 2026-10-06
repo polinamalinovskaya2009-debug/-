@@ -1,0 +1,21 @@
+def sum_delit(x):
+    s = 1 
+    d = 2
+
+    while d * d <= x:
+        if x % d == 0:
+            s += d
+            if d != x // d:                s += x // d
+        d += 1
+    return s
+
+
+N = int(input("Введите N: "))
+
+print("Дружественные пары:", end=" ")
+for a in range(2, N + 1):
+    b = sum_delit(a)
+    if b > a and b <= N:
+        if sum_delit(b) == a:
+            print(f"({a}, {b})", end=" ")
+print()

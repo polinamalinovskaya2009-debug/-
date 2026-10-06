@@ -1,0 +1,12 @@
+nums = list(map(int, input("Ввод: ").split()))
+nums = [x for x in nums if x != 0]
+
+chet = sum(1 for x in nums if x % 2 == 0)
+nechet = sum(1 for x in nums if x % 2 != 0)
+pol = sum(1 for x in nums if x > 0)
+otr = sum(1 for x in nums if x < 0)
+
+print(f"Чётных: {chet}")
+print(f"Нечётных: {nechet}")
+print(f"Положительных: {pol}")
+print(f"Отрицательных: {otr}")

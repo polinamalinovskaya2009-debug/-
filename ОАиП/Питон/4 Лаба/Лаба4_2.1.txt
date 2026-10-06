@@ -1,0 +1,17 @@
+N = int(input("Введите N: "))
+
+temp = abs(N)
+summ = 0
+proiz = 1
+kol = 0
+
+while temp > 0:
+    cif = temp % 10
+    summ += cif
+    proiz *= cif
+    kol += 1
+    temp //= 10
+
+print("Сумма:", summ)
+print("Произведение:", proiz)
+print("Количество:", kol)
