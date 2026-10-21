@@ -1,0 +1,12 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+sum_a = sum(a)
+prod_a = 1
+for a in a:
+    prod_a *= a
+avg_a = sum_a / n
+
+print(f"Сумма: {sum_a}")
+print(f"Произведение: {prod_a}")
+print(f"Среднее: {avg_a:.2f}")

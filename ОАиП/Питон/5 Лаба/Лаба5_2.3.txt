@@ -1,0 +1,13 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+max_a = max(a)
+
+if max_a > 10:
+    for i in range(n):
+        a[i] *= 2
+else:
+    for i in range(n):
+        a[i] += 1
+
+print(*a)

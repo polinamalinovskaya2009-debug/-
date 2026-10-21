@@ -1,0 +1,22 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+chet_count = 0
+nechet_count = 0
+pol_count = 0
+otr_count = 0
+
+for num in a:
+    if num % 2 == 0:
+        chet_count += 1
+    else:
+        nechet_count += 1
+    if num > 0:
+        pol_count += 1
+    elif num < 0:
+        otr_count += 1
+
+print(f"Чётных: {chet_count}")
+print(f"Нечётных: {nechet_count}")
+print(f"Положительных: {pol_count}")
+print(f"Отрицательных: {otr_count}")

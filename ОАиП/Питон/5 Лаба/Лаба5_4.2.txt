@@ -1,0 +1,9 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+first = a[0]
+for i in range(n - 1):
+    a[i] = a[i + 1]
+a[n - 1] = first
+
+print(*a)

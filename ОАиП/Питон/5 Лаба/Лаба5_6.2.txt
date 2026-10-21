@@ -1,0 +1,10 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+ok = True
+for i in range(n // 2):
+    if a[i] != a[n - 1 - i]:
+        ok = False
+        break
+
+print("Палиндром" if ok else "Не палиндром")
